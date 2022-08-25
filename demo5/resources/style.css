@@ -1,109 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 94px;
+    /* left: 0px; */
+    top: 0px;
+
+    background: #FFFFFF !important;
+}
+
+header .container-fluid {
+    height: 94px;
+    padding: 0 !important;
+}
+
+/* Logo */
 .logo {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 4px 7px;
     gap: 10px;
-    margin-left: 100px;
+
+}
+
+.logo {
+    height: 94px;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .navbar-brand {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
 }
+
 
 .brand-logo {
     width: 50px;
     height: 26px;
-    left: 0px;
-    top: 33px;
-    bottom: 35px;
+    margin-top: 33px;
+    margin-bottom: 35px;
+
 
     background: #0094FF;
     border-radius: 6px 2px;
 }
 
-.brand-logo {
+.brand-logo p {
+    width: 36px;
+    height: 18px;
+
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
-    /* font-weight: 500; */
-    font-weight: 700;
+    font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #fff;
+    padding: 4px 7px;
 
-    text-align: center;
-    padding-top: 2px;
+    color: #fff;
 }
 
-.brand-logo-title {
+.brand-logo-title p {
     width: 108px;
     height: 21px;
 
-
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
+    font-weight: 500;
     font-size: 18px;
     line-height: 21px;
 
     color: #3F4254;
 
-    top: 35px;
 }
 
-.brand-logo-title {
+
+.brand-logo-title p {
     font-weight: 300;
 }
 
 .brand-logo-title span {
-    /* font-weight: 500; */
-    font-weight: 700;
+    font-weight: 500;
 }
 
-.navbar-menu {
-    margin-left: 45px;
+.brand-logo-title {
+    margin-top: 35px;
+    margin-bottom: 38px;
 }
 
+/* Navbar Menu */
+/* need check */
 .navbar-menu {
-    font-family: 'Poppins';
+    margin-left: 97px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
-    color: #3F4254;
-
-    top: 35px;
 }
 
-.nav-item {
-    margin-left: 29px;
+.nav-link {
+    padding: 0 !important;
+    color: #3F4254 !important;
 }
 
-/*nav-link selected*/
-.selected {
-    display: block;
-    width: 67px;
-    height: 38px;
-    text-align: center;
-
-    background: #EFF2F5;
-    opacity: 1;
-    /* opacity: 0.4; */
-    border-radius: 6px;
-    color: #0094FF !important;
+.nav-single-item {
+    padding: 7px 0 8px 0;
+    margin-right: 28px;
 }
 
-nav {
+header nav {
     border-bottom: 1px solid #E4E6EF;
 }
 
-/*user*/
-.user-login {
-    display: flex;
-    flex-direction: row;
+/*nav-link selected*/
+#selected {
+    width: 67px;
+    height: 38px;
+    background: #EFF2F5;
+    opacity: 0.4;
+    border-radius: 6px;
+    color: #0094FF !important;
+    padding: 7px 14px 8px 15px;
 }
 
-.user-title {
-    font-family: 'Poppins';
-    font-style: normal;
+/* user */
+.user-login {
+    width: 90px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    align-items: center;
+}
 
+
+.user-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     font-size: 12px;
     line-height: 18px;
     text-align: -webkit-right;
@@ -112,107 +152,151 @@ nav {
 .user-title .annouce {
     width: 30px;
     height: 18px;
-    top: 30px;
-
     font-weight: 500;
     color: #A1A5B7;
 }
 
 .user-title .username {
-
     width: 48px;
     height: 18px;
-    top: 46px;
-
     font-weight: 600;
-
     color: #000000;
 
 }
 
 
-
 .user-img {
     width: 32px;
     height: 32px;
-    top: 31px;
     border-radius: 6px;
-    margin-right: 150px;
-}
-
-.user-img img {
     margin-left: 10px;
-
 }
 
-
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
 
 /*Main content*/
-/*Left side*/
-.sub-heading {
-    max-width: 135px;
-    height: 18px;
+/*Left col*/
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-
-    letter-spacing: 0.03em;
-
-    color: #A1A5B7;
-
+section .container-fluid,
+.row {
+    width: 1500px;
+    padding: 0;
 }
 
 .left-side-nav {
+    width: 230px !important;
     border-right: 1px solid #EFF2F5;
-    margin-left: 105px;
+    margin: 0px 39px 0px 160px !important;
+    padding: 0 !important;
 }
 
 .side-nav-items {
     display: flex;
     justify-content: space-between;
-
+    height: 39px;
+    padding: 5px;
 }
 
-.sub-content {
-    height: 21px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    /* font-weight: 500; */
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-
-    color: #3F4254;
+.side-nav-items.active {
+    margin-bottom: 10px;
 }
 
-.sub-number {
-    height: 18px;
+.sub-heading
+ {
+    padding: 0 10px;
+}
 
-    font-family: 'Poppins';
+.main-title .sub-heading {
+    width: 100%;
+    
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
-    line-height: 18px;
-
+    
+    letter-spacing: 0.03em;
 
     color: #A1A5B7;
+}
+
+
+.sub-content {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    
+    padding: 0 10px;
+    color: #3F4254;
 
 }
 
-/* Question*/
+
+.sub-number {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 10px;
+    color: #A1A5B7;
+}
+
+.main-title {
+    margin-top: 34px;
+}
+
+.main-title .more {
+    margin-top: 18px;
+}
+
+/* selected topic */
+.main-title .active {
+    background: #F5F8FA;
+    border-radius: 4px !important;
+    border-left: 3px solid #0094FF;
+    border-radius: 6px;
+    ;
+    padding: 10px 0;
+}
+
+/* Question - Middle */
+
+.middle-side {
+    padding: 0 !important;
+    width: 581px !important;
+    height: 1220px !important;
+    margin-top: 42px !important;
+    /*......*/
+    margin-bottom: 36px;
+    margin-right: 40px;
+}
+
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    height: 38px;
+}
+
+
+.tag-header {
+    display: flex;
+    align-items: center;
+}
+
 
 .question-header h2 {
-
-    font-family: 'Poppins';
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* font-weight: 600; */
-    font-weight: 700;
+    font-weight: 600;
     font-size: 22px;
-    /* line-height: 33px; */
+    line-height: 33px;
     letter-spacing: -0.01em;
 
     color: #181C32;
@@ -220,10 +304,9 @@ nav {
 }
 
 .question-header span {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* font-weight: 500; */
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
@@ -232,34 +315,23 @@ nav {
 
 }
 
-.question-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.tag-header {
-    display: inline-flex;
-}
-
-.middle-side {
-    margin-left: 40px;
-}
-
-.question-items h3 {
-    font-family: 'Poppins';
+#my-btn {
+    width: 126px;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* font-weight: 600; */
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: -0.01em;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
 
-    color: #181C32;
 }
 
 .question-items {
-    /* font-family: 'Poppins'; */
+    margin-top: 24px;
+}
+
+.question-items p {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -267,21 +339,69 @@ nav {
     letter-spacing: -0.01em;
 
     color: #3F4254;
+    margin: 2px 0 0 0;
 }
 
-.user .username {
-    /* font-family: 'Poppins'; */
+.question-items h3 {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* font-weight: 500; */
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+
+    color: #181C32;
+    margin: 0;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #E4E6EF;
+    margin-top: 9px;
+    padding-bottom: 28px;
+}
+
+.question-footer .user {
+    display: flex;
+}
+
+.user {
+    width: 123px;
+    height: 36px;
+}
+
+.user .avt {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    margin: 2px 0;
+}
+
+.user .user-content {
+    margin-left: 7px;
+}
+
+
+.username,
+.comment-time {
+    margin-top: 0 !important;
+}
+
+.user-content .username {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-
     letter-spacing: -0.02em;
+
+    color: #181C32;
+
 }
 
-.user .comment-time {
-    /* font-family: 'Poppins'; */
+.user-content .comment-time {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
@@ -289,28 +409,88 @@ nav {
     letter-spacing: -0.02em;
 
     color: #A1A5B7;
+    margin-top: 1px !important;
+
 }
 
-.user-content .username {
-    margin: 0;
-}
+/* hashtag */
 
-.footer .user {
+.question-footer .badge {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 5px 0;
+    padding: 0;
 }
 
-.user-content {
-    margin-left: 7px;
+.badge .bg {
+    max-width: 86px;
+    height: 26px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #7E8299;
+    padding: 5px 11px;
 }
 
 
-/*Right side*/
+.badge .bg {
+    background: #F3F6F9;
+    border-radius: 4px;
+}
+
+.badge .bg-dash {
+    border: 1px dashed #E4E6EF;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* pagination */
+.pagination-bottom {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination-bottom div {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    background: #F3F6F9;
+    border-radius: 6px;
+    color: #B5B5C3;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pagination-bottom a {
+    text-decoration: none;
+    color: #B5B5C3;
+}
+
+.pagination-bottom span {
+    color: #0094FF;
+}
 
 .right-side-nav {
-    margin-left: 40px;
+    width: 300px !important;
+    height: 822px;
+    margin-top: 40px !important;
+    padding: 0 !important;
 }
 
-/*  Search Box  */
+/* search box */
+
 .has-search .form-control {
     padding-left: 2.375rem;
 }
@@ -327,79 +507,58 @@ nav {
     color: #aaa;
 }
 
-#my-btn {
-    /* mybtn */
-    padding: 9px 16px;
-    gap: 10px;
 
-    width: 126px;
-    height: 38px;
-
-    background: #0094FF;
-    border-radius: 6px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-/* Aside Box */
+/* aside box */
 .aside-heading {
     margin-top: 30px;
 
     box-sizing: border-box;
 
     width: 300px;
-    height: 360px;
 
     background: #F5F8FA;
     border-radius: 9px;
 }
 
 .aside-heading h1 {
-    width: 147px;
-    height: 18px;
-
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* font-weight: 600; */
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     line-height: 18px;
-
-    padding-top: 27px;
-    margin-left: 29px;
-    /* margin-right: 124px; */
 
     letter-spacing: -0.01em;
 
     color: #181C32;
+    padding-top: 27px;
+    margin-left: 29px;
+
 }
 
 .aside-content {
-    margin-left: 30.5px;
+    margin-top: 22px;
+    margin-left: 29px;
     display: flex;
-    flex-direction: center;
-    align-items: center;
 }
 
 .aside-content p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* font-weight: 500; */
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.01em;
 
     color: #3F4254;
+    margin-left: 9.5px;
+    /* margin-bottom: 19px; */
 }
 
-.side-icon {
-    width: 15px;
-    height: 15px;
+.content-img {
+    width: 18px;
+    height: 18px;
+}
 
+.last-child {
+    margin-bottom: 35px !important;
 }
