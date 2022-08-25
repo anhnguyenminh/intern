@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- Bootstrap CSS only -->
@@ -59,15 +62,16 @@
             </div>
 
         </div>
+
         <!-- rightside-->
         <div class="rightside-widget">
             <!--navbar-->
-            <div>
+            <div class="contain-navbar">
                 <nav class="my-menu navbar navbar-expand-lg bg-white">
 
                     <div class="container-fluid">
 
-                        <div class="navbar-brand mb-0 h1">Applications</div>
+                        <div class="navbar-brand">Applications</div>
 
                         <div class="navbar-menu collapse navbar-collapse">
                             <ul class="navbar-nav">
@@ -88,34 +92,57 @@
                         </div>
 
                         <div class="icon-bar">
-                            <div>
-                                <img src="images/Cart3.png" />
+                            <div class="notification">
+                                <div>
+                                    <img src="images/cart3.png" />
+                                </div>
+                                <div>
+                                    <img src="images/layout-4-blocks.png" />
+                                </div>
+                                <div>
+                                    <img src="images/equalizer.png" />
+                                </div>
+                                <div>
+                                    <img src="images/group-chat.png" />
+                                </div>
                             </div>
                             <div>
-                                <img src="images/Layout-4-blocks.png" />
-                            </div>
-                            <div>
-                                <img src="images/Equalizer.png" />
-                            </div>
-                            <div>
-                                <img src="images/Group-chat.png" />
-                            </div>
-                            <div>
-                                <img src="images/Avatar.png" />
+                                <img src="images/avatar.png" />
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
             <!--search banner -->
-            <div class="search-banners">
-                <div class="sub-header">
-                    <div class="search-title">Search Jobs</div>
-                    <span>Job Management System</span>
+            <div class="search-banners rel">
+                <img class="abs img" src="images/pattern.png" alt="">
+                <div class="search-item">
+                    <div class="sub-header">
+                        <div class="search-title">Search Jobs</div>
+                        <span>Job Management System</span>
+                    </div>
+                    <div class="search-form">
+                        <div class="form-input flex-row">
+                            <div class="form-group rel">
+                                <i class="abs icon-search fa fa-search"></i>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-search fa fa-search"></i>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon-search fa fa-search"></i>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="search-form">
-                    <input placeholder="Job Title" />
-                </div>
+
+
+
+
+
             </div>
             <!--widget -->
             <div class="row1">
@@ -143,69 +170,71 @@
                                 <div>More than 400+ new members</div>
                             </div>
                             <div class="right-side-btn">
-                                <button type="button" class="btn-new-report" style="color: #fff; background-color: #8950FC; border-radius: 6px;">New Report</button>
+                                <button type="button" class="btn-new-report"
+                                    style="color: #fff; background-color: #8950FC; border-radius: 6px;">New
+                                    Report</button>
                             </div>
                         </div>
                         <div class="my-table">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">ORDER ID</th>
-                                <th scope="col">COUNTRY</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">STATUS</th>
-                                <th scope="col">ACTION</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>56037-XDER</td>
-                                <td>Brasil</td>
-                                <td>05/28/2020</td>
-                                <td>Approved</td>
-                                <td>
-                                    <button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>05822-FXSP</td>
-                                <td>Belarus</td>
-                                <td>02/04/2020</td>
-                                <td>In Progress</td>
-                                <td>
-                                    <button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>00347-BCLQ</td>
-                                <td>Phillipines</td>
-                                <td>23/12/2020</td>
-                                <td>Success</td>
-                                <td>
-                                    <button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">4</th>
-                                <td>4472-QREX</td>
-                                <td>Argentina</td>
-                                <td>17/09/2021</td>
-                                <td>Rejected</td>
-                                <td>
-                                    <button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">ORDER ID</th>
+                                        <th scope="col">COUNTRY</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">STATUS</th>
+                                        <th scope="col">ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>56037-XDER</td>
+                                        <td>Brasil</td>
+                                        <td>05/28/2020</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <button>Edit</button>
+                                            <button>Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>05822-FXSP</td>
+                                        <td>Belarus</td>
+                                        <td>02/04/2020</td>
+                                        <td>In Progress</td>
+                                        <td>
+                                            <button>Edit</button>
+                                            <button>Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00347-BCLQ</td>
+                                        <td>Phillipines</td>
+                                        <td>23/12/2020</td>
+                                        <td>Success</td>
+                                        <td>
+                                            <button>Edit</button>
+                                            <button>Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>4472-QREX</td>
+                                        <td>Argentina</td>
+                                        <td>17/09/2021</td>
+                                        <td>Rejected</td>
+                                        <td>
+                                            <button>Edit</button>
+                                            <button>Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
