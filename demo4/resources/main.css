@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* split 2 big parts */
@@ -100,8 +101,6 @@
     border-radius: 6px;
 }
 
-
-
 /* Iconbars */
 .icon-bar {
     display: flex;
@@ -119,9 +118,6 @@
     flex-direction: row;
     margin-right: 37.92px;
 }
-
-
-
 
 /* Search */
 
@@ -158,8 +154,25 @@
     line-height: 20px;
 }
 
+.search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-advanced-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    padding-left: 30px;
+}
+
 .form-input {
-    width: 60%;
+    width: 70%; /*need check again*/
     height: 60px;
     margin: 17px 0 40px 40px;
     padding: 10px;
@@ -182,7 +195,6 @@
 
 }
 
-
 /* pattern */
 .rel {
     position: relative;
@@ -196,3 +208,269 @@
     top: 0;
     right: 0;
 }
+
+/* Widgets */
+.rightside-widget {
+    background: #D5D9E2;
+}
+
+/* First row */
+/* .first-row{
+    height: 465px;;
+} */
+
+.weekly-sale-stats,
+.wrapped-header-and-table {
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+}
+
+
+.weekly-sale-stats {
+    margin: 40px;
+    width: 410px;
+    position: relative;
+    margin-right: 0;
+}
+
+.weekly-sale-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+
+    color: #464E5F;
+    padding: 23px 0 0 30px;
+
+}
+
+.weekly-sale-description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+
+    color: #80808F;
+    padding: 1px 0 0 30px;
+}
+
+.weekly-rank-sale {
+    padding: 18px 30px 20px 30px;
+}
+
+.rank {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.rank-child {
+    display: flex;
+    flex-direction: row;
+}
+
+.rank-child img {
+    padding-right: 14px;
+}
+
+.rank-child .name {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #000000;
+
+}
+
+.rank-child .speciality {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B5B5C3;
+}
+
+.weekly-sale-income {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #80808F;
+
+    background: #F3F6F9;
+    border-radius: 6px;
+    padding: 5px 4px;
+
+}
+
+.weekly-sale-chart {
+    position: absolute;
+    bottom: 0;
+}
+
+.weekly-sale-chart img {
+    width: 100%;
+}
+
+/* wrapped header and table */
+
+.wrapped-header-and-table {
+    margin: 40px;
+}
+
+.upper-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-new-report {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    background: #8950FC;
+    border-radius: 6px;
+
+    padding: 8px 19px;
+    margin-right: 30px;
+}
+
+.left-side-title {
+    padding: 26px 0 7px 29px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #212121;
+
+}
+
+.left-side-description {
+    padding: 0 0 25px 29px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    color: #B5B5C3;
+}
+
+
+/* table */
+.table-bellow {
+    padding: 0 30px;
+    width: 860px;
+}
+
+.table-bellow th {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+
+    color: #B5B5C3;
+
+}
+
+.arrow-down {
+    color: #3699FF !important;
+}
+
+
+td {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #464E5F;
+
+}
+.btn-action{
+    display: flex;
+    padding-right:10px ;
+}
+.btn-action div {
+padding-right: 10px;
+}
+.date {
+    color: #3699FF;
+}
+
+.sub-description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #B5B5C3;
+}
+
+td input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* tr td:last-child{
+    border: none;
+} */
+
+/* undone  just till for the sub code and sub date */
+
+/* Second  row */
+
+.second-row.warpped-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* middle chart */
+
+.sumary{
+    padding: 50px 60px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    width: 100%;
+    height: 265px;
+    bottom: 0;
+}
+.sale-progress {
+    background: radial-gradient(50% 38.76% at 50% 31.25%, #A075F8 0%, #8950FC 100%);
+    border-radius: 12px;
+    position: relative;
+}
+
+.sale-progress-chart {
+    margin: 0 40px;
+    margin-top: 32px;
+}
+
+.sumary .chart-explain {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Third row */
