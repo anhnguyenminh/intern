@@ -172,12 +172,17 @@
 }
 
 .form-input {
-    width: 70%; /*need check again*/
-    height: 60px;
+    width: 70%; 
     margin: 17px 0 40px 40px;
     padding: 10px;
     border-radius: 6px;
     background: #fff;
+    align-items: center;
+}
+
+.form-group{
+    padding: 10px 0;
+    display: flex;
 }
 
 .icon-search {
@@ -193,6 +198,30 @@
     border-right: 2px solid #a4a4a4;
     margin-right: 10px;
 
+}
+
+.form-group:nth-child(3) input{
+    border-right: none;
+}
+
+.search-btn{
+    background: #212121;
+    border-radius: 6px;
+    width: 82px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 0 !important;
 }
 
 /* pattern */
