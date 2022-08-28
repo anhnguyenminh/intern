@@ -5,33 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/main.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="resources/reset.css">
+    <link rel="stylesheet" href="resources/style.css">
     <!-- Font Awesome CSS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <title>Demo 4</title>
-    <style>
-        /* search */
-        .search-banners {
-            background: url("images/background.png");
-            height: 184px;
-        }
-    </style>
+        crossorigin="anonymous"></script> -->
+
+    <title>Demo 04</title>
+    <style></style>
 </head>
 
 <body>
     <div class="split">
-        <!-- leftside  fixed-->
-        <div class="leftside-bar">
+        <!-- leftside fixed navbar-->
+        <nav class="leftside-bar">
             <div class="logo-icon">
                 <img src="images/logo.png" alt="logo-icon" />
             </div>
@@ -58,11 +56,11 @@
                     <img src="images/122-attention.png" />
                 </div>
             </div>
-        </div>
+        </nav>
         <!-- rightside-->
-        <div class="rightside-widget">
-            <!--navbar-->
-            <div class="contain-navbar">
+        <main class="rightside-widget">
+            <!-- aside navbar-->
+            <section class="contain-navbar">
                 <nav class="my-menu navbar navbar-expand-lg bg-white">
                     <div class="container-fluid">
                         <div class="navbar-brand">Applications</div>
@@ -103,10 +101,9 @@
                         </div>
                     </div>
                 </nav>
-            </div>
-            <!--search banner -->
-            <div class="search-banners rel">
-                <img class="abs img" src="images/pattern.png" alt="">
+            </section>
+            <!--search engine -->
+            <section class="search-banners rel">
                 <div class="search-item">
                     <div class="sub-header">
                         <div class="search-title">Search Jobs</div>
@@ -114,22 +111,23 @@
                     </div>
                     <div class="search-form">
                         <div class="form-input flex-row">
-                            <div class="form-group">  <!-- rel-->
-                                <!-- <i class="abs icon-search fa fa-search"></i> -->
-                                <img src="images/search.png"/>
+
+                            <div class="form-group">
+                                <!-- rel-->
+                                <img src="images/search.png" />
                                 <input type="text" placeholder="Job Title" />
                             </div>
+
                             <div class="form-group">
-                                <!-- <i class="icon-search fa fa-search"></i> -->
-                                <img src="images/layout-4-blocks.png"/>
+                                <img src="images/layout-4-blocks.png" />
                                 <input type="text" placeholder="Category" />
                             </div>
+
                             <div class="form-group ">
-                                <!-- <i class="icon-search fa fa-search"></i> -->
-                                <img src="images/dish.png"/>
+                                <img src="images/dish.png" />
                                 <input type="text" placeholder="Location" />
                             </div>
-                            
+
                             <div class="search-btn">
                                 <p>Search</p>
                             </div>
@@ -139,15 +137,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <img class="abs img" src="images/pattern.png" alt="decoration-pattern">
+            </section>
             <!--widget -->
-            <div class="first-row">
+
+            <section class="first-row">
                 <div class="weekly-sale-stats">
-                    <div class="warpped-title">
-                        <div class="weekly-sale-title">Weekly Sales Stats</div>
-                        <div class="weekly-sale-description">890,344 Sales</div>
+                    <div class="wrapped">
+                        <div class="wrapped-title">Weekly Sales Stats</div>
+                        <div class="wrapped-description">890,344 Sales</div>
                     </div>
-                    <div class="weekly-rank-sale">
+                    <div class="rank-sale">
                         <div class="rank">
                             <div class="rank-child">
                                 <div>
@@ -204,7 +204,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">
-                                        <input type="checkbox" name="report" />
+                                        <input type="checkbox" />
                                     </th>
                                     <th scope="col">ORDER ID</th>
                                     <th scope="col">COUNTRY</th>
@@ -215,19 +215,21 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">
-                                        <input type="checkbox" name="report" />
-                                    </th>
+                                    <td scope="row">
+                                        <input type="checkbox" />
+                                    </td>
                                     <td>56037-XDER</td>
                                     <td>
-                                        <p>Brasil</p>
-                                        <p class="sub-description">Code: BR</p>
+                                        <div>Brasil</div>
+                                        <div class="sub-description">Code: BR</div>
                                     </td>
                                     <td>
-                                        <p class="date">05/28/2020</p>
-                                        <p class="sub-description">Paid</p>
+                                        <div class="date">05/28/2020</div>
+                                        <div class="sub-description">Paid</div>
                                     </td>
-                                    <td>Approved</td>
+                                    <td>
+                                        <div class="status approved"> Approved</div>
+                                    </td>
                                     <td>
                                         <div class="btn-action">
                                             <div>
@@ -240,19 +242,21 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">
-                                        <input type="checkbox" name="report" class="checkbox-input" />
-                                    </th>
+                                    <td scope="row">
+                                        <input type="checkbox" />
+                                    </td>
                                     <td>05822-FXSP</td>
                                     <td>
-                                        <p>Belarus</p>
-                                        <p class="sub-description">Code: BY</p>
+                                        <div>Belarus</div>
+                                        <div class="sub-description">Code: BY</div>
                                     </td>
                                     <td>
-                                        <p class="date">02/04/2020</p>
-                                        <p class="sub-description">Rejected</p>
+                                        <div class="date">02/04/2020</div>
+                                        <div class="sub-description">Rejected</div>
                                     </td>
-                                    <td>In Progress</td>
+                                    <td>
+                                        <div class="status in-progress">In Progress</div>
+                                    </td>
                                     <td>
                                         <div class="btn-action">
                                             <div>
@@ -265,19 +269,21 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">
-                                        <input type="checkbox" name="report" />
-                                    </th>
+                                    <td scope="row">
+                                        <input type="checkbox" />
+                                    </td>
                                     <td>00347-BCLQ</td>
                                     <td>
-                                        <p>Phillipines</p>
-                                        <p class="sub-description">Code: PH</p>
+                                        <div>Phillipines</div>
+                                        <div class="sub-description">Code: PH</div>
                                     </td>
                                     <td>
-                                        <p class="date">23/12/2020</p>
-                                        <p class="sub-description">Paid</p>
+                                        <div class="date">23/12/2020</div>
+                                        <div class="sub-description">Paid</div>
                                     </td>
-                                    <td>Success</td>
+                                    <td>
+                                        <div class="status success">Success</div>
+                                    </td>
                                     <td>
                                         <div class="btn-action">
                                             <div>
@@ -289,19 +295,21 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">
-                                        <input type="checkbox" name="report" />
-                                    </th>
+                                    <td scope="row">
+                                        <input type="checkbox" />
+                                    </td>
                                     <td>4472-QREX</td>
                                     <td>
-                                        <p>Argentina</p>
-                                        <p class="sub-description">Code: AR</p>
+                                        <div>Argentina</div>
+                                        <div class="sub-description">Code: AR</div>
                                     </td>
                                     <td>
-                                        <p class="date">17/09/2021</p>
-                                        <p class="sub-description">Pending</p>
+                                        <div class="date">17/09/2021</div>
+                                        <div class="sub-description">Pending</div>
                                     </td>
-                                    <td>Rejected</td>
+                                    <td>
+                                        <div class="status rejected">Rejected</div>
+                                    </td>
                                     <td>
                                         <div class="btn-action">
                                             <div>
@@ -317,20 +325,21 @@
                         </table>
                     </div>
                 </div>
-            </div>
-            <div class="second-row" style="display: flex;">
+            </section>
+            <section class="second-row">
                 <!-- col first -->
                 <div class="weekly-sale-stats">
-                    <div class="warpped-title">
+                    <div class="wrapped extend ">
                         <div>
-                            <div class="weekly-sale-title">Weekly Sales Stats</div>
-                            <div class="weekly-sale-description">890,344 Sales</div>
+                            <div class="wrapped-title">Weekly Sales Stats</div>
+                            <div class="wrapped-description">890,344 Sales</div>
                         </div>
+                        <!-- dots -->
                         <div>
                             <img src="images/dark-dots.png" />
                         </div>
                     </div>
-                    <div class="weekly-rank-sale">
+                    <div class="rank-sale">
                         <div class="rank">
                             <div class="rank-child">
                                 <div>
@@ -418,8 +427,11 @@
                 <!-- col middle -->
                 <div class="weekly-sale-stats sale-progress">
                     <!-- title -->
-                    <div class="warpped-title">
-                        <div class="weekly-sale-title">Sales Progress</div>
+                    <div class="wrapped extend">
+                        <div class="wrapped-title sale-title">Sales Progress</div>
+                        <div>
+                            <img src="images/light-dots.png" />
+                        </div>
                     </div>
                     <!-- chart -->
                     <div class="sale-progress-chart">
@@ -429,29 +441,29 @@
                     <div class="sumary">
                         <div class="row">
                             <div class="col-md-7 ">
-                                <p class="">Average Sale</p>
+                                <p class="sumary-title">Average Sale</p>
 
-                                <p class="">$650</p>
+                                <p class="sumary-content">$650</p>
                             </div>
 
                             <div class="col-md-5 ">
-                                <p class="">Comission</p>
+                                <p class="sumary-title">Comission</p>
 
-                                <p class="">$29,004</p>
+                                <p class="sumary-content">$29,004</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-7 ">
-                                <p class="-title">Annual Taxes 2019</p>
+                                <p class="sumary-title">Annual Taxes 2019</p>
 
-                                <p class="-number">$233,600</p>
+                                <p class="sumary-content">$233,600</p>
                             </div>
 
                             <div class="col-md-5">
-                                <p class="-title">Annual Income</p>
+                                <p class="sumary-title">Annual Income</p>
 
-                                <p class="-number">$1,480,00</p>
+                                <p class="sumary-content">$1,480,00</p>
                             </div>
                         </div>
                     </div>
@@ -459,11 +471,11 @@
 
                 <!-- col last -->
                 <div class="weekly-sale-stats">
-                    <div class="warpped-title">
-                        <div class="weekly-sale-title">Weekly Sales Stats</div>
-                        <div class="weekly-sale-description">890,344 Sales</div>
+                    <div class="wrapped">
+                        <div class="wrapped-title">Weekly Sales Stats</div>
+                        <div class="wrapped-description">890,344 Sales</div>
                     </div>
-                    <div class="weekly-rank-sale">
+                    <div class="rank-sale">
                         <div class="rank">
                             <div class="rank-child">
                                 <div>
@@ -505,9 +517,46 @@
                         <img src="images/bottom.png" />
                     </div>
                 </div>
-            </div>
-            <div class="third-row"></div>
-        </div>
+            </section>
+            <section class="third-row">
+                <!-- col first -->
+                <div class="weekly-sale-stats">
+                    <div class="wrapped last-row">
+                        <div class="wrapped-title header">7 Hours Ago</div>
+                        <div>
+                            <img src="images/pinterest.png" />
+                        </div>
+                    </div>
+                    <p class="header-post">PitStop - Multiple Email Generator</p>
+                </div>
+
+
+                <!-- col middle -->
+                <div class="weekly-sale-stats">
+                    <div class="wrapped last-row">
+                        <div class="wrapped-title header">2 Days Ago</div>
+                        <div>
+                            <img src="images/telegram.png" />
+                        </div>
+                    </div>
+                    <p class="header-post">Craft - ReactJS Admin
+                        Theme</p>
+                </div>
+
+                <!-- col last -->
+                <div class="weekly-sale-stats">
+                    <div class="wrapped last-row">
+                        <div class="wrapped-title header">5 Weeks Ago</div>
+                        <div>
+                            <img src="images/puzzle.png" />
+                        </div>
+                    </div>
+                    <p class="header-post">KT.com - Hight Quality
+                        Templates
+                    </p>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 
