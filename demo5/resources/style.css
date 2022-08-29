@@ -124,7 +124,7 @@ header nav {
     width: 67px;
     height: 38px;
     background: #EFF2F5;
-    opacity: 0.4;
+    /* opacity: 0.4; */
     border-radius: 6px;
     color: #0094FF !important;
     padding: 7px 14px 8px 15px;
@@ -204,19 +204,18 @@ section .container-fluid,
     margin-bottom: 10px;
 }
 
-.sub-heading
- {
+.sub-heading {
     padding: 0 10px;
 }
 
 .main-title .sub-heading {
     width: 100%;
-    
+
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-    
+
     letter-spacing: 0.03em;
 
     color: #A1A5B7;
@@ -228,7 +227,7 @@ section .container-fluid,
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    
+
     padding: 0 10px;
     color: #3F4254;
 
@@ -563,33 +562,76 @@ section .container-fluid,
     margin-bottom: 35px !important;
 }
 
-/* hover */
-
-
-/* hover */
+/* effect */
 
 .active p:hover {
     cursor: pointer;
     background: #F5F8FA;
     border-radius: 4px !important;
     border-radius: 6px;
-    padding: 0 10px!important;
+    padding: 0 10px !important;
+    color: #3F4254 !important;
 }
 
 .tab .sub-content:hover {
     cursor: pointer;
     background: #F5F8FA;
     border-radius: 4px !important;
-    border-left: 3px solid #0094FF;
     border-radius: 6px;
     padding: 10px 10px;
+    color: #0094FF;
 }
 
 .side-nav-items:hover {
     cursor: pointer;
     background: #F5F8FA;
     border-radius: 4px !important;
-    border-left: 3px solid #0094FF;
     border-radius: 6px;
     padding: 10px 0;
 }
+
+.side-nav-items p:hover {
+    color: #0094FF;
+}
+
+.nav-single-item a:hover {
+    color: #0094FF !important;
+}
+
+.user-login:hover {
+    cursor: pointer;
+    /* padding: 10px;
+    background: #F5F8FA; */
+}
+
+.form-group .form-control:focus {
+    border-color: #3F4254;
+    box-shadow: none;
+}
+
+.question-items h3:hover,
+.aside-content p:hover {
+    cursor: pointer;
+    color: #009ef7;
+}
+
+.badge .bg-dash:hover {
+    cursor: pointer;
+    border-color: #009ef7;
+    background: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.bg:hover {
+    cursor: pointer;
+    background-color: #E4E6EF;
+}
+
+.pagination-bottom div:hover {
+    color: #0094FF ;
+    background-color: #EDF7FF;
+}
+/* responsive */
