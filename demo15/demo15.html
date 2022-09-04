@@ -27,8 +27,9 @@
 <body>
     <main class="split-out">
         <!-- Navbar Left Side -->
-        <nav class="sidebar" id="my-side-nav">
+        <nav class="sidebar" id="mysidenav">
             <div>
+                <div id="btn-close-nav" onclick="closeNav()">&times;</div>
                 <div class="logo">
                     <img src="images/logo.png" />
                 </div>
@@ -89,7 +90,27 @@
                                 <img src="images/bell.png" />
                             </div>
                         </div>
+                    </div>
 
+                    <div class="main-widget-mobile">
+                        <div class="mobile-header">
+                            <div class="navbar-brand-mobile">
+                                <div id="btn-open-nav" onclick="openNav()">&#9776;</div>
+                                <img src="images/demo4-mobile.svg" class="mobile-logo" />
+                            </div>
+                            <div class="header-right">
+                                <div class="search-btn-mb">
+                                    <img src="images/search.png" />
+                                </div>
+                                <div class="notification">
+                                    <img src="images/bell.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-left">
+                            <div class="header-title">Dashboard</div>
+                            <div class="header-description">You’ve got 24 New Sales</div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -194,7 +215,7 @@
                                         <div>
                                             <label>We are working<br />
                                                 to boost lovely mood</label>
-                                                
+
                                             <button type="button">Boost Your Store</button>
                                         </div>
                                         <div>
