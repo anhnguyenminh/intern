@@ -23,13 +23,13 @@
         crossorigin="anonymous"></script>
 
     <title>Demo 04</title>
-    
+
 </head>
 
 <body>
     <div class="split">
         <!-- leftside fixed navbar-->
-        <nav class="leftside-bar">
+        <nav class="leftside-bar" id="mysidenav">
             <div class="logo-icon">
                 <img src="images/logo.png" alt="logo-icon" />
             </div>
@@ -64,6 +64,10 @@
                 <nav class="my-menu navbar navbar-expand-lg bg-white">
                     <div class="container-fluid">
                         <div class="navbar-brand">Applications</div>
+                        <div class="navbar-brand-mobile">
+                            <div id="btn-open-nav" onclick="openNav()">&#9776;</div> <img src="images/demo4-mobile.svg"
+                                class="mobile-logo" />
+                        </div>
                         <div class="navbar-menu collapse navbar-collapse">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -140,7 +144,7 @@
                 <img class="abs img" src="images/pattern.png" alt="decoration-pattern">
             </section>
             <!--widget -->
-
+            >
             <section class="first-row">
                 <div class="weekly-sale-stats">
                     <div class="wrapped">

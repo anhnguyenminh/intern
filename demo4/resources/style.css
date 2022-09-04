@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-body{
+body {
     min-width: 500px;
 }
 
@@ -718,4 +718,81 @@ tr:last-child td {
     color: #212121;
     margin: 0;
     padding: 25px 30px 20px 29px;
+}
+
+
+/* responsive */
+
+.navbar-brand-mobile {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    section .my-menu .navbar-menu {
+        display: none !important;
+    }
+
+    .split .leftside-bar,
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-brand-mobile {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+    
+    }
+
+    #btn-open-nav {
+        cursor: pointer;
+        font-size: 30px;
+        color: #A1A5B7;
+        
+    }
+
+    .mobile-logo {
+        width: 40px;
+        height: 25px;
+    }
+
+    .search-form .flex-row {
+        flex-direction: column !important;
+    }
+
+    .form-input {
+        align-items: flex-start;
+        margin: 17px 0;
+    }
+
+    .search-banners {
+        height: fit-content;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: unset;
+        position: relative;
+        z-index: 2;
+    }
+
+    .search-advanced-title {
+        padding: 0;
+    }
+
+    .search-advanced-title p {
+        margin: 0 !important;
+    }
+
+    .form-input input {
+        border: none;
+    }
+
+    .abs.img{
+        height: -webkit-fill-available;
+        
+    }
+
+
 }
