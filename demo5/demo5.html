@@ -28,428 +28,504 @@
 </head>
 
 <body>
-    <!-- Header and Navbar -->
-    <header>
-        <div class="menu">
-            <nav class="navbar navbar-expand-lg bg-white" style="padding: 0;">
+    <div>
+        <div class="left-side-nav" id="mysidenav" onclick="closeNav()"><span class="exit">&times;</span>
 
-                <div class="container-fluid">
-
-                    <div class="navbar-brand logo">
-                        <div class="brand-logo">
-                            <p>Devs</p>
-                        </div>
-                        <div class="brand-logo-title">
-                            <p><span>Keen</span>Themes</p>
-                        </div>
-                    </div>
-
-                    <div class=" navbar-menu collapse navbar-collapse">
-                        <ul class=" navbar-nav">
-                            <li class="nav-item">
-                                <div class="nav-single-item"><a href="#" class="nav-link">Home</a></div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-single-item">
-                                    <a href="#" class="nav-link">Products</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-single-item">
-                                    <a href="#" class="nav-link">Resources</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-single-item" id="selected">
-
-                                    <a href="#" class="nav-link active" style="color: #0094FF !important;">Devs</a>
-
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-single-item"><a href="#" class="nav-link">Studio</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="user-login">
-                        <div class="user-title">
-                            <div class="annouce">Hello</div>
-                            <div class="username">Richard</div>
-                        </div>
-                        <div class="user-img">
-                            <img src="images/300-2 2.png" />
-                        </div>
-                    </div>
+            <div class="main-title tab">
+                <p class="sub-heading">PUBLIC</p>
+                <div class="side-nav-items active">
+                    <p class="sub-content" id="selected-topic">All Questions</p>
+                    <span class="sub-number">6,234</span>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <!-- Main section -->
-    <section>
-        <div class="container-fluid">
-            <div class="flex-row">
-                <!-- Left col -->
-                <div class="left-side-nav ">
-
-                    <div class="main-title tab">
-                        <p class="sub-heading">PUBLIC</p>
-                        <div class="side-nav-items active">
-                            <p class="sub-content">All Questions</p>
-                            <span class="sub-number">6,234</span>
-                        </div>
-                        <div>
-                            <p class="sub-content">Popular</p>
-                        </div>
-                        <div>
-                            <p class="sub-content">Tags</p>
-                        </div>
-                        <div>
-                            <p class="sub-content">Ask Question</p>
-                        </div>
-                    </div>
-                    <div class="main-title">
-                        <p class="sub-heading">MY ACTIVITY</p>
-                        <div class="side-nav-items">
-                            <p class="sub-content">My Questions</p>
-                            <span class="sub-number">24</span>
-                        </div>
-                        <div class="side-nav-items">
-                            <p class="sub-content">Enrolled</p>
-                            <span class="sub-number">10</span>
-                        </div>
-                        <div class="side-nav-items">
-                            <p class="sub-content">Saved</p>
-                            <span class="sub-number">6</span>
-                        </div>
-                    </div>
-                    <div class="main-title">
-                        <p class="sub-heading">CATEGORIES</p>
-                        <div class="side-nav-items">
-                            <p class="sub-content">Metronic Admin</p>
-                            <span class="sub-number">1,403</span>
-                        </div>
-                        <div class="side-nav-items">
-                            <p class="sub-content">Craft Admin</p>
-                            <span class="sub-number">325</span>
-                        </div>
-                        <div class="side-nav-items">
-                            <p class="sub-content">Suggestions</p>
-                            <span class="sub-number">23</span>
-                        </div>
-                        <div class="side-nav-items">
-                            <p class="sub-content">Pre-sale Questions</p>
-                            <span class="sub-number">146</span>
-                        </div>
-                        <div class="side-nav-items">
-                            <p class="sub-content">Laravic Starter Kit</p>
-                            <span class="sub-number">793</span>
-                        </div>
-
-                        <p class="sub-heading more">More Categories</p>
-                    </div>
-
-
-
+                <div>
+                    <p class="sub-content topic-item">Popular</p>
                 </div>
-                <!-- Middle col -->
-                <div class=" middle-side question">
-                    <div class="question-header">
-                        <div class="tag-header">
-                            <h2>All Questions</h2>
-                            <span>(6,234)</span>
-                        </div>
-                        <div>
-                            <button id="my-btn" class="btn btn-primary">Ask Question</button>
-                        </div>
-                    </div>
-                    <div class="question-items">
-                        <h3>How to use Metronic with Django Framework?</h3>
-                        <p>I’ve been doing some ajax request, to populate a inside drawer, the content of that drawer
-                            has a
-                            sub
-                            menu, that you are using in list and all card toolbar.</p>
-                        <div class="question-footer">
-                            <div class="user">
-                                <div class="avt">
-                                    <img src="images/avatar.png" />
-                                </div>
-                                <div class="user-content">
-                                    <p class="username">James Hunt</p>
-                                    <p class="comment-time">24 minutes ago</p>
-                                </div>
-                            </div>
-                            <div class="badge">
-                                <div class="bg bg-dash">16 Answers</div>
-                                <div class="bg">Metronic</div>
-                                <div class="bg">
-                                    <div>23<img src="images/arr003.svg" class="arrow-up" /></div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="question-items">
-                        <h3>When to expect new version of Laravel?<img src="images/arr002.svg" /></h3>
-                        <p>When approx. is the next update for the Laravel version planned? Waiting for the CRUD, 2nd
-                            factor
-                            etc. features before starting my project. Also can we expect the Laravel + Vue version in
-                            the
-                            next
-                            update?</p>
-                        <div class="question-footer">
-                            <div class="user">
-                                <div>
-                                    <img src="images/300-3 1.png" class="avt" />
-                                </div>
-                                <div class="user-content">
-                                    <p class="username">Sandra Piquet</p>
-                                    <p class="comment-time">1 day ago</p>
-                                </div>
-                            </div>
-                            <div class="badge">
-
-                                <div class="bg bg-dash">2 Answers</div>
-                                <div class="bg">Pre-sale</div>
-                                <div class="bg">
-                                    <div>4<img src="images/arr003.svg" class="arrow-up" /></div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="question-items">
-                        <h3>Could not get Demo 7 working<img src="images/arr002.svg" /></h3>
-                        <p>could not get demo7 working from latest metronic version. Had a lot of issues installing, I
-                            had
-                            to
-                            downgrade my npm to 6.14.4 as someone else recommended here in the comments, this goot it to
-                            compile
-                            but when I ran it, the browser showed errors TypeErr..</p>
-                        <div class="question-footer">
-                            <div class="user">
-                                <div>
-                                    <img src="images/avatar_2.png" class="avt" />
-                                </div>
-                                <div class="user-content">
-                                    <p class="username">Niko Roseberg</p>
-                                    <p class="comment-time">1 day ago</p>
-                                </div>
-                            </div>
-                            <div class="badge">
-                                <div class="bg bg-dash">4 Answers</div>
-                                <div class="bg">Craft</div>
-                                <div class="bg">
-                                    <div>9<img src="images/arr003.svg" class="arrow-up" /></div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="question-items">
-                        <h3>I want to get refund<img src="images/arr002.png" /></h3>
-                        <p>Your Metronic theme is so good but the reactjs version is typescript only. The description
-                            did
-                            not
-                            write any warn about it. Since I only know javascript, I can not do anything with your
-                            theme. I
-                            want
-                            to refund.</p>
-                        <div class="question-footer">
-                            <div class="user">
-                                <div>
-                                    <img src="images/300-2 2.png" class="avt" />
-                                </div>
-                                <div class="user-content">
-                                    <p class="username">James Hunt</p>
-                                    <p class="comment-time">24 minutes ago</p>
-                                </div>
-                            </div>
-                            <div class="badge">
-                                <div class="bg bg-dash">23 Answers</div>
-                                <div class="bg">Start React </div>
-                                <div class="bg">
-                                    <div>58 <img src="images/arr003.svg" class="arrow-up" /></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="question-items">
-                        <h3>How to use Metronic with Django Framework?<img src="images/arr002.png" /></h3>
-                        <p>I’ve been doing some ajax request, to populate a inside drawer, the content of that drawer
-                            has a
-                            sub
-                            menu, that you are using in list and all card toolbar.</p>
-                        <div class="question-footer">
-                            <div class="user">
-                                <div>
-                                    <img src="images/avatar.png" class="avt" />
-                                </div>
-                                <div class="user-content">
-                                    <p class="username">James Hunt</p>
-                                    <p class="comment-time">24 minutes ago</p>
-                                </div>
-                            </div>
-                            <div class="badge">
-                                <div class="bg bg-dash">37 Answers</div>
-                                <div class="bg">Laravic</div>
-                                <div class="bg">
-                                    <div>14<img src="images/arr003.svg" class="arrow-up" /></div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="question-items">
-                        <h3>I want to get refund</h3>
-                        <p>Your Metronic theme is so good but the reactjs version is typescript only. The description
-                            did
-                            not
-                            write any warn about it. Since I only know javascript, I can not do anything with your
-                            theme. I
-                            want
-                            to refund.</p>
-                        <div class="question-footer">
-                            <div class="user">
-                                <div>
-                                    <img src="images/300-2 2.png" class="avt" />
-                                </div>
-                                <div class="user-content">
-                                    <p class="username">James Hunt</p>
-                                    <p class="comment-time">24 minutes ago</p>
-                                </div>
-                            </div>
-                            <div class="badge">
-                                <div class="bg bg-dash">2 Answers</div>
-                                <div class="bg">Metronic</div>
-                                <div class="bg">
-                                    <div>0<img src="images/arr003.svg" class="arrow-up" /></div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--- Pagination -->
-
-                    <div class="pagination-bottom">
-                        <div>
-                            <a href="#">1</a>
-                        </div>
-                        <div>
-                            <span>2</span>
-                        </div>
-                        <div>
-                            <a href="#">3</a>
-                        </div>
-                        <div>
-                            <a href="#">4</a>
-                        </div>
-                        <div>
-                            <a href="#">5</a>
-                        </div>
-                        <div>
-                            <a href="#">..</a>
-                        </div>
-
-                        <div>
-                            <a href="#">7</a>
-                        </div>
-                    </div>
+                <div>
+                    <p class="sub-content topic-item">Tags</p>
                 </div>
-                <!-- Right col -->
-                <div class="right-side-nav right">
-                    <!-- Search bar-->
-                    <div class="form-group has-search">
-                        <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <!-- Sidebar-->
-                    <div class="aside-heading">
-                        <h1>Popular Questions</h1>
-                        <div class="aside-content">
-                            <div class="content-img">
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p> How to use Metrponic with
-                                Django Framework?</p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p>When to expect new version of
-                                Metronic Laravel?
-                            </p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p>Could not get Metronic Demo 7
-                                working</p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p>I want to get a refund</p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p class="last-child">How to use Metronic with Django
-                                Framework?</p>
-                        </div>
-                    </div>
-                    <div class="aside-heading">
-                        <h1>Notable Tutorials</h1>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p> How to use Metrponic with
-                                Django Framework?</p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p>When to expect new version of
-                                Metronic Laravel?
-                            </p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p>Could not get Metronic Demo 7
-                                working</p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p>I want to get a refund</p>
-                        </div>
-                        <div class="aside-content">
-                            <div>
-                                <img src="images/arr004.svg" />
-                            </div>
-                            <p class="last-child">How to use Metronic with Django
-                                Framework?</p>
-                        </div>
-                    </div>
-
+                <div>
+                    <p class="sub-content topic-item">Ask Question</p>
                 </div>
             </div>
+            <div class="main-title">
+                <p class="sub-heading">MY ACTIVITY</p>
+                <div class="side-nav-items">
+                    <p class="sub-content">My Questions</p>
+                    <span class="sub-number">24</span>
+                </div>
+                <div class="side-nav-items">
+                    <p class="sub-content">Enrolled</p>
+                    <span class="sub-number">10</span>
+                </div>
+                <div class="side-nav-items">
+                    <p class="sub-content">Saved</p>
+                    <span class="sub-number">6</span>
+                </div>
+            </div>
+            <div class="main-title">
+                <p class="sub-heading">CATEGORIES</p>
+                <div class="side-nav-items">
+                    <p class="sub-content">Metronic Admin</p>
+                    <span class="sub-number">1,403</span>
+                </div>
+                <div class="side-nav-items">
+                    <p class="sub-content">Craft Admin</p>
+                    <span class="sub-number">325</span>
+                </div>
+                <div class="side-nav-items">
+                    <p class="sub-content">Suggestions</p>
+                    <span class="sub-number">23</span>
+                </div>
+                <div class="side-nav-items">
+                    <p class="sub-content">Pre-sale Questions</p>
+                    <span class="sub-number">146</span>
+                </div>
+                <div class="side-nav-items">
+                    <p class="sub-content">Laravic Starter Kit</p>
+                    <span class="sub-number">793</span>
+                </div>
+
+                <p class="sub-heading more">More Categories</p>
+            </div>
+
+
+
         </div>
-    </section>
+
+        <!-- Header and Navbar -->
+        <header>
+            <div class="menu">
+                <nav class="navbar navbar-expand-lg bg-white" style="padding: 0;">
+
+                    <div class="container">
+
+                        <div class="navbar-brand logo">
+                            <div id="btn-open-sidenav" onclick="openNav();">&#9776;</div>
+                            <div class="brand-logo">
+                                <p>Devs</p>
+                            </div>
+                            <div class="brand-logo-title">
+                                <p><span>Keen</span>Themes</p>
+                            </div>
+                        </div>
+
+                        <div class=" navbar-menu collapse navbar-collapse">
+                            <ul class=" navbar-nav">
+                                <li class="nav-item">
+                                    <div class="nav-single-item"><a href="#" class="nav-link">Home</a></div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-single-item">
+                                        <a href="#" class="nav-link">Products</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-single-item">
+                                        <a href="#" class="nav-link">Resources</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-single-item" id="selected">
+
+                                        <a href="#" class="nav-link active" style="color: #0094FF !important;">Devs</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-single-item"><a href="#" class="nav-link">Studio</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-login">
+                            <div class="user-title">
+                                <div class="annouce">Hello</div>
+                                <div class="username">Richard</div>
+                            </div>
+                            <div class="user-img">
+                                <img src="images/300-2 2.png" />
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Main section -->
+        <section>
+            <div class="container-fluid">
+                <div class="flex-row">
+                    <!-- Left col -->
+                    <div class="left-side-nav">
+
+                        <div class="main-title tab">
+                            <p class="sub-heading">PUBLIC</p>
+                            <div class="side-nav-items active">
+                                <p class="sub-content" id="selected-topic">All Questions</p>
+                                <span class="sub-number">6,234</span>
+                            </div>
+                            <div>
+                                <p class="sub-content topic-item">Popular</p>
+                            </div>
+                            <div>
+                                <p class="sub-content topic-item">Tags</p>
+                            </div>
+                            <div>
+                                <p class="sub-content topic-item">Ask Question</p>
+                            </div>
+                        </div>
+                        <div class="main-title">
+                            <p class="sub-heading">MY ACTIVITY</p>
+                            <div class="side-nav-items">
+                                <p class="sub-content">My Questions</p>
+                                <span class="sub-number">24</span>
+                            </div>
+                            <div class="side-nav-items">
+                                <p class="sub-content">Enrolled</p>
+                                <span class="sub-number">10</span>
+                            </div>
+                            <div class="side-nav-items">
+                                <p class="sub-content">Saved</p>
+                                <span class="sub-number">6</span>
+                            </div>
+                        </div>
+                        <div class="main-title">
+                            <p class="sub-heading">CATEGORIES</p>
+                            <div class="side-nav-items">
+                                <p class="sub-content">Metronic Admin</p>
+                                <span class="sub-number">1,403</span>
+                            </div>
+                            <div class="side-nav-items">
+                                <p class="sub-content">Craft Admin</p>
+                                <span class="sub-number">325</span>
+                            </div>
+                            <div class="side-nav-items">
+                                <p class="sub-content">Suggestions</p>
+                                <span class="sub-number">23</span>
+                            </div>
+                            <div class="side-nav-items">
+                                <p class="sub-content">Pre-sale Questions</p>
+                                <span class="sub-number">146</span>
+                            </div>
+                            <div class="side-nav-items">
+                                <p class="sub-content">Laravic Starter Kit</p>
+                                <span class="sub-number">793</span>
+                            </div>
+
+                            <p class="sub-heading more">More Categories</p>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Middle col -->
+                    <div class=" middle-side question">
+                        <div class="question-header">
+                            <div class="tag-header">
+                                <h2>All Questions</h2>
+                                <span>(6,234)</span>
+                            </div>
+                            <div>
+                                <button id="my-btn" class="btn btn-primary">Ask Question</button>
+                            </div>
+                        </div>
+                        <div class="question-items">
+                            <h3>How to use Metronic with Django Framework?</h3>
+                            <p>I’ve been doing some ajax request, to populate a inside drawer, the content of that
+                                drawer
+                                has a
+                                sub
+                                menu, that you are using in list and all card toolbar.</p>
+                            <div class="question-footer">
+                                <div class="user">
+                                    <div class="avt">
+                                        <img src="images/avatar.png" />
+                                    </div>
+                                    <div class="user-content">
+                                        <p class="username">James Hunt</p>
+                                        <p class="comment-time">24 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="badge">
+                                    <div class="bg bg-dash">16 Answers</div>
+                                    <div class="bg">Metronic</div>
+                                    <div class="bg">
+                                        <div>23<img src="images/arr003.svg" class="arrow-up" /></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-items">
+                            <h3>When to expect new version of Laravel?<img src="images/arr002.svg" /></h3>
+                            <p>When approx. is the next update for the Laravel version planned? Waiting for the CRUD,
+                                2nd
+                                factor
+                                etc. features before starting my project. Also can we expect the Laravel + Vue version
+                                in
+                                the
+                                next
+                                update?</p>
+                            <div class="question-footer">
+                                <div class="user">
+                                    <div>
+                                        <img src="images/300-3 1.png" class="avt" />
+                                    </div>
+                                    <div class="user-content">
+                                        <p class="username">Sandra Piquet</p>
+                                        <p class="comment-time">1 day ago</p>
+                                    </div>
+                                </div>
+                                <div class="badge">
+
+                                    <div class="bg bg-dash">2 Answers</div>
+                                    <div class="bg">Pre-sale</div>
+                                    <div class="bg">
+                                        <div>4<img src="images/arr003.svg" class="arrow-up" /></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-items">
+                            <h3>Could not get Demo 7 working<img src="images/arr002.svg" /></h3>
+                            <p>could not get demo7 working from latest metronic version. Had a lot of issues installing,
+                                I
+                                had
+                                to
+                                downgrade my npm to 6.14.4 as someone else recommended here in the comments, this goot
+                                it to
+                                compile
+                                but when I ran it, the browser showed errors TypeErr..</p>
+                            <div class="question-footer">
+                                <div class="user">
+                                    <div>
+                                        <img src="images/avatar_2.png" class="avt" />
+                                    </div>
+                                    <div class="user-content">
+                                        <p class="username">Niko Roseberg</p>
+                                        <p class="comment-time">1 day ago</p>
+                                    </div>
+                                </div>
+                                <div class="badge">
+                                    <div class="bg bg-dash">4 Answers</div>
+                                    <div class="bg">Craft</div>
+                                    <div class="bg">
+                                        <div>9<img src="images/arr003.svg" class="arrow-up" /></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-items">
+                            <h3>I want to get refund<img src="images/arr002.png" /></h3>
+                            <p>Your Metronic theme is so good but the reactjs version is typescript only. The
+                                description
+                                did
+                                not
+                                write any warn about it. Since I only know javascript, I can not do anything with your
+                                theme. I
+                                want
+                                to refund.</p>
+                            <div class="question-footer">
+                                <div class="user">
+                                    <div>
+                                        <img src="images/300-2 2.png" class="avt" />
+                                    </div>
+                                    <div class="user-content">
+                                        <p class="username">James Hunt</p>
+                                        <p class="comment-time">24 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="badge">
+                                    <div class="bg bg-dash">23 Answers</div>
+                                    <div class="bg">Start React </div>
+                                    <div class="bg">
+                                        <div>58 <img src="images/arr003.svg" class="arrow-up" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-items">
+                            <h3>How to use Metronic with Django Framework?<img src="images/arr002.png" /></h3>
+                            <p>I’ve been doing some ajax request, to populate a inside drawer, the content of that
+                                drawer
+                                has a
+                                sub
+                                menu, that you are using in list and all card toolbar.</p>
+                            <div class="question-footer">
+                                <div class="user">
+                                    <div>
+                                        <img src="images/avatar.png" class="avt" />
+                                    </div>
+                                    <div class="user-content">
+                                        <p class="username">James Hunt</p>
+                                        <p class="comment-time">24 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="badge">
+                                    <div class="bg bg-dash">37 Answers</div>
+                                    <div class="bg">Laravic</div>
+                                    <div class="bg">
+                                        <div>14<img src="images/arr003.svg" class="arrow-up" /></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-items">
+                            <h3>I want to get refund</h3>
+                            <p>Your Metronic theme is so good but the reactjs version is typescript only. The
+                                description
+                                did
+                                not
+                                write any warn about it. Since I only know javascript, I can not do anything with your
+                                theme. I
+                                want
+                                to refund.</p>
+                            <div class="question-footer">
+                                <div class="user">
+                                    <div>
+                                        <img src="images/300-2 2.png" class="avt" />
+                                    </div>
+                                    <div class="user-content">
+                                        <p class="username">James Hunt</p>
+                                        <p class="comment-time">24 minutes ago</p>
+                                    </div>
+                                </div>
+                                <div class="badge">
+                                    <div class="bg bg-dash">2 Answers</div>
+                                    <div class="bg">Metronic</div>
+                                    <div class="bg">
+                                        <div>0<img src="images/arr003.svg" class="arrow-up" /></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Pagination -->
+
+                        <div class="pagination-bottom">
+                            <div>
+                                <a href="#">1</a>
+                            </div>
+                            <div>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <a href="#">3</a>
+                            </div>
+                            <div>
+                                <a href="#">4</a>
+                            </div>
+                            <div>
+                                <a href="#">5</a>
+                            </div>
+                            <div>
+                                <a href="#">..</a>
+                            </div>
+
+                            <div>
+                                <a href="#">7</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right col -->
+                    <div class="right-side-nav right">
+                        <!-- Search bar-->
+                        <div class="form-group has-search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <!-- Sidebar-->
+                        <div class="aside-heading">
+                            <h1>Popular Questions</h1>
+                            <div class="aside-content">
+                                <div class="content-img">
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p> How to use Metrponic with
+                                    Django Framework?</p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p>When to expect new version of
+                                    Metronic Laravel?
+                                </p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p>Could not get Metronic Demo 7
+                                    working</p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p>I want to get a refund</p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p class="last-child">How to use Metronic with Django
+                                    Framework?</p>
+                            </div>
+                        </div>
+                        <div class="aside-heading">
+                            <h1>Notable Tutorials</h1>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p> How to use Metrponic with
+                                    Django Framework?</p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p>When to expect new version of
+                                    Metronic Laravel?
+                                </p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p>Could not get Metronic Demo 7
+                                    working</p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p>I want to get a refund</p>
+                            </div>
+                            <div class="aside-content">
+                                <div>
+                                    <img src="images/arr004.svg" />
+                                </div>
+                                <p class="last-child">How to use Metronic with Django
+                                    Framework?</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="resources/main.js"></script>
 </body>
 
 </html>

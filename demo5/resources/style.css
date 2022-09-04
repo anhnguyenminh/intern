@@ -3,26 +3,23 @@
     margin: 0;
 }
 
+body {
+    min-width: 768px;
+}
+
 header {
-    /* width: 1200px; */
     margin: 0 auto;
-    /* height: 94px; */
-    /* left: 0px; */
     top: 0px;
     border: 1px solid #E4E6EF;
     background: #FFFFFF !important;
+    border-left: none;
+    border-right: none;
 }
 
 header .menu {
-    width: 1200px;
     margin: auto;
 
 }
-
-/* header .container-fluid {
-    height: 94px;
-    padding: 0 !important;
-} */
 
 /* Logo */
 .logo {
@@ -233,6 +230,9 @@ section .container-fluid,
     color: #A1A5B7;
 }
 
+#selected-topic {
+    padding: 0 10px;
+}
 
 .sub-content {
     font-family: 'Poppins', sans-serif;
@@ -241,8 +241,15 @@ section .container-fluid,
     font-size: 14px;
 
     padding-left: 15px;
+
     color: #3F4254;
 
+}
+
+.topic-item {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* .left-side-nav .tab .sub-content{
@@ -535,7 +542,7 @@ padding-left: 15px;
 }
 
 .has-search input::placeholder {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -596,7 +603,7 @@ padding-left: 15px;
     margin-left: 9.5px;
 }
 
-.aside-content p{
+.aside-content p {
     margin-bottom: 0;
 }
 
@@ -679,4 +686,69 @@ padding-left: 15px;
     background-color: #EDF7FF;
 }
 
+#btn-open-sidenav {
+    display: none;
+}
+
+#mysidenav{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 109;
+    background-color: #fff;
+    margin: 0 !important;
+    overflow-y: visible;
+}
+.exit{
+    font-size: 30px;
+    color: #A1A5B7;
+    cursor: pointer;
+}
+
+
 /* responsive */
+
+@media (max-width: 1440px) {
+    .left-side-nav {
+        display: none;
+    }
+
+    .right-side-nav {
+        display: none;
+    }
+
+    section .container-fluid {
+        width: 100%;
+
+    }
+
+    section .flex-row {
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .brand-logo-title {
+        display: none;
+    }
+
+    .menu .navbar-brand {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #btn-open-sidenav {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: #A1A5B7;
+    }
+}
