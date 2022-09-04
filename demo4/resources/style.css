@@ -720,6 +720,14 @@ tr:last-child td {
     padding: 25px 30px 20px 29px;
 }
 
+#mysidenav{
+    position: fixed;
+    z-index: 5;
+    display: none;
+    height: -webkit-fill-available;
+    
+}
+
 
 /* responsive */
 
@@ -742,14 +750,14 @@ tr:last-child td {
         display: flex;
         align-items: center;
         margin: 0 20px;
-    
+
     }
 
     #btn-open-nav {
         cursor: pointer;
         font-size: 30px;
         color: #A1A5B7;
-        
+
     }
 
     .mobile-logo {
@@ -789,10 +797,13 @@ tr:last-child td {
         border: none;
     }
 
-    .abs.img{
+    .abs.img {
         height: -webkit-fill-available;
-        
+
     }
 
-
+    #btn-close-nav {
+        font-size: 40px;
+        cursor: pointer;
+    }
 }

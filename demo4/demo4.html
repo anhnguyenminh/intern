@@ -27,9 +27,38 @@
 </head>
 
 <body>
+    <nav class="leftside-bar mobile" id="mysidenav">
+        <div class="logo-icon">
+            <img src="images/logo.png" alt="logo-icon" />
+        </div>
+        <div class="leftside-bar-items">
+            <div class="dashboard-item-selected">
+                <img src="images/164-protection.png" />
+            </div>
+            <div class="dashboard-item">
+                <img src="images/089-list-3.png" />
+            </div>
+            <div class="dashboard-item">
+                <img src="images/165-calendar-6.png" />
+            </div>
+            <div class="dashboard-item">
+                <img src="images/169-hourglass-1.png" />
+            </div>
+            <div class="dashboard-item">
+                <img src="images/156-analytics-2.png" />
+            </div>
+            <div class="dashboard-item">
+                <img src="images/114-medical-records-1.png" />
+            </div>
+            <div class="dashboard-item">
+                <img src="images/122-attention.png" />
+            </div>
+            <div id="btn-close-nav" onclick="closeNav()">&times;</div>
+        </div>
+    </nav>
     <div class="split">
         <!-- leftside fixed navbar-->
-        <nav class="leftside-bar" id="mysidenav">
+        <nav class="leftside-bar">
             <div class="logo-icon">
                 <img src="images/logo.png" alt="logo-icon" />
             </div>
@@ -65,8 +94,8 @@
                     <div class="container-fluid">
                         <div class="navbar-brand">Applications</div>
                         <div class="navbar-brand-mobile">
-                            <div id="btn-open-nav" onclick="openNav()">&#9776;</div> <img src="images/demo4-mobile.svg"
-                                class="mobile-logo" />
+                            <div id="btn-open-nav" onclick="openNav()">&#9776;</div>
+                            <img src="images/demo4-mobile.svg" class="mobile-logo" />
                         </div>
                         <div class="navbar-menu collapse navbar-collapse">
                             <ul class="navbar-nav">
@@ -144,7 +173,7 @@
                 <img class="abs img" src="images/pattern.png" alt="decoration-pattern">
             </section>
             <!--widget -->
-            >
+
             <section class="first-row">
                 <div class="weekly-sale-stats">
                     <div class="wrapped">
@@ -563,6 +592,8 @@
             </section>
         </main>
     </div>
+
+    <script src="resources/main.js"></script>
 </body>
 
 </html>

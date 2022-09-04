@@ -6,20 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo15</title>
+
     <link rel="stylesheet" href="resources/reset.css">
     <link rel="stylesheet" href="resources/style.css">
+    <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <main class="split-out">
         <!-- Navbar Left Side -->
-        <nav class="sidebar">
+        <nav class="sidebar" id="my-side-nav">
             <div>
                 <div class="logo">
                     <img src="images/logo.png" />
@@ -60,316 +68,342 @@
                     <img src="images/setting.png" class="setting-icon" />
                 </div>
             </div>
+
         </nav>
 
         <!-- Right Side -->
-        <section class="container">
-            <div class="row main-widget">
-                <div class="col-md-6 header-left">
-                    <div class="header-title">Dashboard</div>
-                    <div class="header-description">You’ve got 24 New Sales</div>
-                </div>
-                <div class="col-md-6 header-right">
-                    <div class="search-box">
-                        <img src="images/search.png" />
-                        <input type="text" placeholder="Quick Search" class="form-control" />
-                    </div>
-                    <div class="notification">
-                        <img src="images/bell.png" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row ">
-                        <div class="col-md-12 use-base">
-                            <div class="wrapped">
-                                <div>
-                                    <div class="wrapped-title">User Base</div>
-                                    <div class="wrapped-content">37% are Affiliates</div>
-                                </div>
-                                <div>
-                                    <img src="images/three-dots.svg" />
-                                </div>
-                            </div>
-                            <div class="chart">
-                                <img src="images/chart.png" />
-                            </div>
-                            <div class="amount">
-                                <img src="images/amout-xy.png" />
-                            </div>
+        <div id="main-body">
+            <section id="header-main-body">
+                <div class="container">
+                    <div class="main-widget">
+                        <div class="header-left">
+                            <div class="header-title">Dashboard</div>
+                            <div class="header-description">You’ve got 24 New Sales</div>
                         </div>
-                        <!-- row 2 -->
-                        <div class="col-md-12 use-base inherit ">
-                            <div class="wrapped">
-                                <div class="wrapped-title">Trends</div>
-                                <div>
-                                    <img src="images/three-dots.svg" />
-                                </div>
+                        <div class="header-right">
+                            <div class="search-box">
+                                <img src="images/search.png" />
+                                <input type="text" placeholder="Quick Search" class="form-control" />
                             </div>
-                            <div class="chart trend-chart">
-                                <img src="images/trend-chart.png" />
-                            </div>
-                            <div class="trending">
-                                <div class="trend">
-                                    <div class="trend-item">
-                                        <div>
-                                            <img src="images/pinterest.png" />
-                                        </div>
-                                        <div class="trend-content">
-                                            <div class="title">Top Authors</div>
-                                            <div class="content">Successful Fellas</div>
-                                        </div>
-                                    </div>
-                                    <div class="income">+82$</div>
-                                </div>
-                                <div class="trend">
-                                    <div class="trend-item">
-                                        <div>
-                                            <img src="images/telegram.png" />
-                                        </div>
-                                        <div class="trend-content">
-                                            <div class="title">Top Authors</div>
-                                            <div class="content">Most Successful</div>
-                                        </div>
-                                    </div>
-                                    <div class="income">+280$</div>
-                                </div>
-                                <div class="trend">
-                                    <div class="trend-item">
-                                        <div>
-                                            <img src="images/puzzle.png" />
-                                        </div>
-                                        <div class="trend-content">
-                                            <div class="title">Top Authors</div>
-                                            <div class="content">Most Successful Fellas</div>
-                                        </div>
-                                    </div>
-                                    <div class="income">+4500$</div>
-                                </div>
+                            <div class="notification">
+                                <img src="images/bell.png" />
                             </div>
                         </div>
 
-                        <!-- row 3 -->
-                        <div class="col-md-12 use-base inherit ">
-                            <div class="wrapped">
-                                <div>
-                                    <div class="wrapped-title">Recent Activities</div>
-                                    <div class="wrapped-content">890,344 Sales</div>
-                                </div>
-                                <div>
-                                    <img src="images/three-dots.svg" />
-                                </div>
-                            </div>
-                            <div class="chart timeline-chart">
-                                <img src="images/timeline.png" />
-                            </div>
-
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-8">
+            </section>
+
+            <section id="info-main-body">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-12 banner">
-                            <img src="images/banner.png" />
-                        </div>
-                        <div class="col-md-12 table-app ">
-                            <div class="table-header">
-                                <div class="left">
-                                    <div class="title-left">New Arrivals</div>
-                                    <div class="description-left">More than 400+ new members</div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row ">
+                                <div class="col-md-12 col-xs-12 col-lg-12 use-base">
+                                    <div class="wrapped">
+                                        <div>
+                                            <div class="wrapped-title">User Base</div>
+                                            <div class="wrapped-content">37% are Affiliates</div>
+                                        </div>
+                                        <div>
+                                            <img src="images/three-dots.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="chart">
+                                        <img src="images/chart.png" />
+                                    </div>
+                                    <div class="amount">
+                                        <img src="images/amout-xy.png" />
+                                    </div>
                                 </div>
-                                <div class="right">
-                                    <button type="button" class="btn">Month</button>
-                                    <button type="button" class="btn">Week</button>
-                                    <button type="button" class="btn btn-selected">Day</button>
-                                </div>
-                            </div>
-                            <div class="table-content">
-                                <table class="table table-borderless">
-                                    <tbody>
-                                        <tr>
-                                            <td class="logo-and-name">
-                                                <div class="logo-app">
+                                <!-- row 2 -->
+                                <div class="col-md-12 col-xs-12 col-lg-12 use-base inherit ">
+                                    <div class="wrapped">
+                                        <div class="wrapped-title">Trends</div>
+                                        <div>
+                                            <img src="images/three-dots.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="chart trend-chart">
+                                        <img src="images/trend-chart.png" />
+                                    </div>
+                                    <div class="trending">
+                                        <div class="trend">
+                                            <div class="trend-item">
+                                                <div>
                                                     <img src="images/pinterest.png" />
                                                 </div>
-                                                <div class="app">
-                                                    <div class="app-name">Sant Outstanding</div>
-                                                    <div class="app-sub">bprow@bnc.cc</div>
+                                                <div class="trend-content">
+                                                    <div class="title">Top Authors</div>
+                                                    <div class="content">Successful Fellas</div>
                                                 </div>
-                                            </td>
-                                            <td class="margin-right">
-                                                <div class="app-name">$2,000,000</div>
-                                                <div class="app-sub">Paid</div>
-                                            </td>
-                                            <td class="">
-                                                <div class="status approved"> Approved</div>
-                                            </td>
-                                            <td>
-                                                <div class="btn-action">
-                                                    <div>
-                                                        <img src="images/btn-setting.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/edit.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/trash.png" />
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="logo-and-name">
-                                                <div class="logo-app">
+                                            </div>
+                                            <div class="income">+82$</div>
+                                        </div>
+                                        <div class="trend">
+                                            <div class="trend-item">
+                                                <div>
                                                     <img src="images/telegram.png" />
                                                 </div>
-                                                <div class="app">
-                                                    <div class="app-name">Telegram Mobile</div>
-                                                    <div class="app-sub">bprow@bnc.cc</div>
+                                                <div class="trend-content">
+                                                    <div class="title">Top Authors</div>
+                                                    <div class="content">Most Successful</div>
                                                 </div>
-                                            </td>
-                                            <td class="margin-right">
-                                                <div class="app-name">$4,600,000</div>
-                                                <div class="app-sub">Paid</div>
-                                            </td>
-                                            <td>
-                                                <div class="status in-progress"> In Progress</div>
-                                            </td>
-                                            <td>
-                                                <div class="btn-action">
-                                                    <div>
-                                                        <img src="images/btn-setting.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/edit.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/trash.png" />
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="logo-and-name">
-                                                <div class="logo-app">
+                                            </div>
+                                            <div class="income">+280$</div>
+                                        </div>
+                                        <div class="trend">
+                                            <div class="trend-item">
+                                                <div>
                                                     <img src="images/puzzle.png" />
                                                 </div>
-                                                <div class="app">
-                                                    <div class="app-name">Cisco Management</div>
-                                                    <div class="app-sub">bprow@bnc.cc</div>
+                                                <div class="trend-content">
+                                                    <div class="title">Top Authors</div>
+                                                    <div class="content">Most Successful Fellas</div>
                                                 </div>
-                                            </td>
-                                            <td class="margin-right">
-                                                <div class="app-name">$560,000</div>
-                                                <div class="app-sub">Paid</div>
-                                            </td>
-                                            <td class="">
-                                                <div class="status success">Success</div>
-                                            </td>
-                                            <td>
-                                                <div class="btn-action">
-                                                    <div>
-                                                        <img src="images/btn-setting.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/edit.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/trash.png" />
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="logo-and-name">
-                                                <div class="logo-app">
-                                                    <img src="images/beat-studio.png" />
-                                                </div>
-                                                <div class="app">
-                                                    <div class="app-name">Beats Studio</div>
-                                                    <div class="app-sub">bprow@bnc.cc</div>
-                                                </div>
-                                            </td>
-                                            <td class="margin-right">
-                                                <div class="app-name">$57,000</div>
-                                                <div class="app-sub">Paid</div>
-                                            </td>
-                                            <td class="">
-                                                <div class="status reject">Rejected</div>
-                                            </td>
-                                            <td>
-                                                <div class="btn-action">
-                                                    <div>
-                                                        <img src="images/btn-setting.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/edit.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/trash.png" />
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="logo-and-name">
-                                                <div class="logo-app">
-                                                    <img src="images/kickstarter.png" />
-                                                </div>
-                                                <div class="app">
-                                                    <div class="app-name">KTR Application</div>
-                                                    <div class="app-sub">bprow@bnc.cc</div>
-                                                </div>
-                                            </td>
-                                            <td class="margin-right">
-                                                <div class="app-name">$45,200,000</div>
-                                                <div class="app-sub">Paid</div>
-                                            </td>
-                                            <td class="">
-                                                <div class="status in-progress"> In Progress</div>
-                                            </td>
-                                            <td>
-                                                <div class="btn-action">
-                                                    <div>
-                                                        <img src="images/btn-setting.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/edit.png" />
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/trash.png" />
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            </div>
+                                            <div class="income">+4500$</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- row 3-->
+
+                                <div class="col-md-12 col-xs-12 col-lg-12 use-base inherit ">
+                                    <div class="wrapped">
+                                        <div>
+                                            <div class="wrapped-title">Recent Activities</div>
+                                            <div class="wrapped-content">890,344 Sales</div>
+                                        </div>
+                                        <div>
+                                            <img src="images/three-dots.svg" />
+                                        </div>
+                                    </div>
+
+                                    <div class="chart timeline-chart">
+                                        <img src="images/timeline.png" />
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
-                        <div class="col-md-12 table-app inherit">
-                            <div class="table-header">
-                                <div class="left">
-                                    <div class="title-left">New Users</div>
-                                    <div class="description-left">New Users joined to KeenThemes Market</div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-lg-12 ">
+                                    <div class="banner">
+                                        <div>
+                                            <label>We are working<br />
+                                                to boost lovely mood</label>
+                                                
+                                            <button type="button">Boost Your Store</button>
+                                        </div>
+                                        <div>
+                                            <img src="images/city.png" />
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="right">
-                                    <button type="button" class="btn">Month</button>
-                                    <button type="button" class="btn">Week</button>
-                                    <button type="button" class="btn btn-selected">Day</button>
+                                <div class="col-md-12 col-xs-12 col-lg-12   ">
+                                    <div class="table-app">
+                                        <div class="table-header">
+                                            <div class="left">
+                                                <div class="title-left">New Arrivals</div>
+                                                <div class="description-left">More than 400+ new members</div>
+                                            </div>
+                                            <div class="right">
+                                                <button type="button" class="btn">Month</button>
+                                                <button type="button" class="btn">Week</button>
+                                                <button type="button" class="btn btn-selected">Day</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-content">
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="logo-and-name">
+                                                            <div class="logo-app">
+                                                                <img src="images/pinterest.png" />
+                                                            </div>
+                                                            <div class="app">
+                                                                <div class="app-name">Sant Outstanding</div>
+                                                                <div class="app-sub">bprow@bnc.cc</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="margin-right">
+                                                            <div class="app-name">$2,000,000</div>
+                                                            <div class="app-sub">Paid</div>
+                                                        </td>
+                                                        <td class="">
+                                                            <div class="status approved"> Approved</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-action">
+                                                                <div>
+                                                                    <img src="images/btn-setting.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/edit.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/trash.png" />
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="logo-and-name">
+                                                            <div class="logo-app">
+                                                                <img src="images/telegram.png" />
+                                                            </div>
+                                                            <div class="app">
+                                                                <div class="app-name">Telegram Mobile</div>
+                                                                <div class="app-sub">bprow@bnc.cc</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="margin-right">
+                                                            <div class="app-name">$4,600,000</div>
+                                                            <div class="app-sub">Paid</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="status in-progress"> In Progress</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-action">
+                                                                <div>
+                                                                    <img src="images/btn-setting.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/edit.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/trash.png" />
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="logo-and-name">
+                                                            <div class="logo-app">
+                                                                <img src="images/puzzle.png" />
+                                                            </div>
+                                                            <div class="app">
+                                                                <div class="app-name">Cisco Management</div>
+                                                                <div class="app-sub">bprow@bnc.cc</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="margin-right">
+                                                            <div class="app-name">$560,000</div>
+                                                            <div class="app-sub">Paid</div>
+                                                        </td>
+                                                        <td class="">
+                                                            <div class="status success">Success</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-action">
+                                                                <div>
+                                                                    <img src="images/btn-setting.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/edit.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/trash.png" />
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="logo-and-name">
+                                                            <div class="logo-app">
+                                                                <img src="images/beat-studio.png" />
+                                                            </div>
+                                                            <div class="app">
+                                                                <div class="app-name">Beats Studio</div>
+                                                                <div class="app-sub">bprow@bnc.cc</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="margin-right">
+                                                            <div class="app-name">$57,000</div>
+                                                            <div class="app-sub">Paid</div>
+                                                        </td>
+                                                        <td class="">
+                                                            <div class="status reject">Rejected</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-action">
+                                                                <div>
+                                                                    <img src="images/btn-setting.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/edit.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/trash.png" />
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="logo-and-name">
+                                                            <div class="logo-app">
+                                                                <img src="images/kickstarter.png" />
+                                                            </div>
+                                                            <div class="app">
+                                                                <div class="app-name">KTR Application</div>
+                                                                <div class="app-sub">bprow@bnc.cc</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="margin-right">
+                                                            <div class="app-name">$45,200,000</div>
+                                                            <div class="app-sub">Paid</div>
+                                                        </td>
+                                                        <td class="">
+                                                            <div class="status in-progress"> In Progress</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-action">
+                                                                <div>
+                                                                    <img src="images/btn-setting.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/edit.png" />
+                                                                </div>
+                                                                <div>
+                                                                    <img src="images/trash.png" />
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="newuser-chart">
-                                <img src="images/newuser-chart.png" />
+
+                                <div class="col-md-12 col-xs-12 col-lg-12  table-app inherit">
+                                    <div class="table-header">
+                                        <div class="left">
+                                            <div class="title-left">New Users</div>
+                                            <div class="description-left">New Users joined to KeenThemes Market</div>
+                                        </div>
+                                        <div class="right">
+                                            <button type="button" class="btn">Month</button>
+                                            <button type="button" class="btn">Week</button>
+                                            <button type="button" class="btn btn-selected">Day</button>
+                                        </div>
+                                    </div>
+                                    <div class="newuser-chart">
+                                        <img src="images/newuser-chart.png" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
-
+    <script src="resources/main.js"></script>
 
 </body>
 
