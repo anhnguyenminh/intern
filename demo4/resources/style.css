@@ -509,7 +509,7 @@ body {
 
 .table-bellow {
     padding: 0 30px;
-    width: 860px;
+    /* width: 860px; */
 }
 
 .table-bellow th {
@@ -837,10 +837,18 @@ tr:last-child td {
         display: flex;
         justify-content: center;
     }
+
+    .table-bellow{
+        max-width: 860px;
+    }
 }
 
 @media (min-width: 1200px) {
     .weekly-sale-stats {
         margin-right: 0;
+    }
+
+    .table-bellow{
+        width: 860px;
     }
 }
