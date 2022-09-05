@@ -323,7 +323,7 @@ body {
     margin: 40px;
     width: 410px;
     position: relative;
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .second-row .weekly-sale-stats,
@@ -720,12 +720,12 @@ tr:last-child td {
     padding: 25px 30px 20px 29px;
 }
 
-#mysidenav{
+#mysidenav {
     position: fixed;
     z-index: 5;
     display: none;
     height: -webkit-fill-available;
-    
+
 }
 
 
@@ -805,5 +805,42 @@ tr:last-child td {
     #btn-close-nav {
         font-size: 40px;
         cursor: pointer;
+    }
+
+    .third-row {
+        display: none;
+    }
+
+    .first-row,
+    .second-row {
+        flex-direction: column;
+    }
+
+    .weekly-sale-stats {
+        height: 500px;
+        width: -webkit-fill-available;
+    }
+
+    .weekly-sale-chart {
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 0;
+    }
+    .weekly-sale-chart img {
+        width: 100%;
+        height: 200px
+    }
+
+    .sale-progress-chart {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .weekly-sale-stats {
+        margin-right: 0;
     }
 }
