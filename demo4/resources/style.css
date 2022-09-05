@@ -827,6 +827,7 @@ tr:last-child td {
         position: absolute;
         bottom: 0;
     }
+
     .weekly-sale-chart img {
         width: 100%;
         height: 200px
@@ -838,8 +839,20 @@ tr:last-child td {
         justify-content: center;
     }
 
-    .table-bellow{
+    .table-bellow {
         max-width: 860px;
+        min-width: 500px;
+    }
+
+    .search-item .sub-header {
+        position: relative;
+        z-index: 2;
+    }
+
+    .search-btn-mobile {
+        display: flex;
+        justify-content: end;
+        width: -webkit-fill-available;
     }
 }
 
@@ -848,7 +861,7 @@ tr:last-child td {
         margin-right: 0;
     }
 
-    .table-bellow{
+    .table-bellow {
         width: 860px;
     }
 }
