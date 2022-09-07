@@ -397,6 +397,11 @@ section {
     padding-bottom: 12px;
 }
 
+.amount img {
+    width: 100%;
+    padding: 0 20px;
+}
+
 section .inherit {
     margin-top: 40px;
 }
@@ -802,6 +807,10 @@ main.split-out nav {
 
 
 @media (min-width: 520px) {
+    section .mobile-row {
+        margin-top: 40px;
+    }
+
     br {
         display: none;
     }
@@ -888,6 +897,10 @@ main.split-out nav {
 
 
 @media (min-width: 992px) {
+    section .mobile-row {
+        margin-top: 0px;
+    }
+
     .total-member .total-member-quotes {
         display: block;
     }
